@@ -1,0 +1,150 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	/* line-height: 1.2; */
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	/* padding-left: 1.4em;
+	list-style: square; */
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset browser styles */
+body {
+	min-width: 600px;
+  background-color: #E8EAF6;
+}
+header {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+hgroup {
+	padding: 1em;
+  background-color: #1A237E;
+  color: white;
+}
+h1 {
+	font-family:sans-serif, serif, 'Times New Roman';
+  font-size: 1.5em;
+}
+h2 {
+  font-family: 'Times New Roman';
+	font-style: italic;
+}
+nav {
+	margin: 0 5% 0.5em;
+	padding: 0.3em 0.7em;
+  background-color: #3F51B5;
+  list-style: none;
+}
+li {
+  display: inline;
+}
+li a {
+  color: #00B0FF;
+	padding: 0.3em;
+}
+li a:hover {
+	background-color: #F50057;
+	color: white;
+}
+h3 {
+	background-color: #7986CB;
+	font-family:sans-serif, serif, 'Times New Roman';
+	text-transform: uppercase;
+	color: white;
+	padding: 1em;
+}
+.main {
+	background-color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0.5em;
+}
+#section_one, #section_two {
+	border: 0.1em solid #C5CAE9;
+	margin-bottom: 0.5em;
+}
+img[src*="park"] {
+vertical-align: middle;
+width: 100%;
+height: 100%;
+}
+figcaption {
+	font-family: 'Times New Roman';
+	font-style: italic;
+	background-color: #C5CAE9;
+	padding: 0.5em 1em;
+	color: #7990A3;
+}
+#section_one p {
+	padding: 0.5em 1em 1em;
+}
+#section_one p a {
+	color: #00B0FF;
+	font-weight: bold;
+}
+.images {
+	text-align:right;
+	background-color: white;
+	padding-bottom: 0.5em;
+	padding-right: 1em;
+}
+.images img {
+	vertical-align: bottom;
+}
+figure img {
+	vertical-align: middle;
+}
+#section_three {
+	border: 0.1em solid #C5CAE9;
+	padding-bottom: 1em;
+}
+h4 {
+	color: #C5CAE9;
+	font-family:'Times New Roman';
+	font-style: italic;
+	padding: 0.5em 1em;
+}
+time {
+	color: #F5A2C1;
+	font-style: italic;
+}
+.Reviews {
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 0.1em solid gray;
+}
+footer {
+	background-color: #1A237E;
+	margin: 0.5em 5% 0;
+	padding: 1.3em 1em;
+}
+footer a {
+	color: #00B0FF;
+}
+span {
+	color: white;
+}
+.i{
+	color: white;
+	padding-top: 0.6em;
+}
