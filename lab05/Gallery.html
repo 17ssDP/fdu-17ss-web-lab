@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>lab05 DengPeng</title>
+</head>
+
+<body>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <div class="container">
+    <header>
+      <nav class="row text-center navbar navbar-expand-sm bg-white nav-justified">
+        <hgroup class="col-md-4">
+          <h1>Share Your Travels</h1>
+          <p class="font-weight-bold font-italic text-center">Let us know where you've been</p>
+        </hgroup>
+        <ul class="col-md-8 navbar-nav  justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="Upload.html">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Related Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-body">
+            <h3>New York-Central Park</h3>
+            <p>Conservatory Pond in Central Park</p>
+            <a href="images/large-central-park.jpg">
+              <img class="img-fluid w-100 card-img-top" src="images/central-park.jpg" title="Park">
+            </a>
+            <div class="card-text">
+              <figcaption class="card-text">This photo of ConservatoryjPond in <a href="#"> Centeral Park</a> in <a href="#">New York City</a>was taken on October 22,2016 with a Canon EOS 30D camera.</figcaption>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row float-right">
+              <div class="col">
+                <img class="" src="images/icon_download.png" alt="">
+              </div>
+              <div class="col">
+                <img class="" src="images/icon_mail.png" alt="">
+              </div>
+              <div class="col">
+                <img class="" src="images/icon_map.png" alt="">
+              </div>
+              <div class="col">
+                <img class="" src="images/icon_up.png" alt="">
+              </div>
+              <div class="col">
+                <img class="" src="images/icon_down.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <div id="related-photos" class="container carousel slide" data-ride="carousel">
+              <h4>Related Photos</h4>
+              <!-- 指示符 -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+
+              <!-- 轮播图片 -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="images/related-large1.jpg"><img class="img-fluid w-100" src="images/related-square1.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="images/related-large2.jpg"><img class="img-fluid w-100" src="images/related-square2.jpg"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="images/related-large3.jpg"><img class="img-fluid w-100" src="images/related-square3.jpg"></a>
+                </div>
+
+                <!-- 左右切换按钮 -->
+                <a class="carousel-control-prev" href="#related-photos" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </a>
+                <a class="carousel-control-next" href="#related-photos" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="container carousel slide">
+              <h4>Reviews</h4>
+              <div class="text-center font-italic row justify-content-left">
+                <h5 class="col-4 col-sm-12"><a href="#ricardo" data-toggle="collapse" class="text-dark" style="text-decoration: none">Ricardo</a></h5>
+                <a href="#ricardo" data-toggle="collapse" class="col-2 col-sm-12">
+                <span class="badge badge-pill badge-success font-italic">2015-05-23</span>
+              </a>
+                <div class="collapse col-6 col-sm-12" id="ricardo">
+                  Easy on the HDR buddy.
+                </div>
+              </div>
+              <hr>
+              <div class="text-center font-italic row justify-content-left">
+                <h5 class="col-3 col-sm-12"><a href="#susan" data-toggle="collapse" class="text-dark" style="text-decoration: none">Susan</a></h5>
+                <a href="#susan" data-toggle="collapse" class="col-3 col-sm-12">
+                <span class="badge badge-pill badge-success font-italic">2015-05-23</span>
+              </a>
+                <div class="collapse col-6 col-sm-12" id="susan">
+                  I love Central Park.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container">
+        <div class="row text-center nav-justified">
+          <div class="col-md-3"></div>
+          <a href="#" class="col-md-2 text-info">Home</a>
+          <a href="#" class="col-md-2 text-info">Browse</a>
+          <a href="#" class="col-md-2 text-info">Search</a></p>
+        </div>
+        <div class="text-center">
+          <i class="text-right">Copyright &copy 2017 Share Your Travels</i>
+        </div>
+      </footer>
+    </div>
+</body>
+
+
+</html>

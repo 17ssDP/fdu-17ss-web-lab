@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>lab05 DengPeng</title>
+</head>
+
+<body>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <div class="container">
+    <header>
+      <nav class="row text-center navbar navbar-expand-sm bg-white nav-justified">
+        <hgroup class="col-md-4">
+          <h1>Share Your Travels</h1>
+          <p class="font-weight-bold font-italic text-center">Let us know where you've been</p>
+        </hgroup>
+        <ul class="col-md-8 navbar-nav  justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Felling Lucky</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">User</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="border border-secondary">
+      <section>
+        <form class="container" action="http://www.randyconnolly.com/tests/process.php" method="post">
+          <br>
+          <legend class="font-weight-bold">Photo Details</legend>
+          <fieldset>
+            <table class="container">
+              <tbody>
+                <tr>
+                  <td colspan="2">
+                    <div class="form-group">
+                      <label class="font-weight-bold">Title</label>
+                      <input type="text" name="title" class="form-control" placeholder="Give your photo a descriptive name">
+                    </div>
+                    <div class="form-group">
+                      <label class="font-weight-bold">Description</label>
+                      <textarea class="form-control" name="name" rows="8" cols="80" placeholder="Adding a rich description will help will help with rearch results"></textarea>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="form-group">
+                      <label class="font-weight-bold">Continent</label>
+                      <select class="form-control bg-light" name="">
+                        <option value="[object Object]">Choose continent</option>
+                        <option value="[object Object]">Asia</option>
+                        <option value="[object Object]">Africa</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="font-weight-bold">Coutry</label>
+                      <select class="form-control" name="">
+                        <option value="[object Object]">Choose country</option>
+                        <option value="[object Object]">China</option>
+                        <option value="[object Object]">America</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="font-weight-bold">City</label>
+                      <input type="text" name="city" class="form-control">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Copyright?
+                    <div class="form-group">
+                      <div class="radio">
+                        <label><input type="radio" name="copyright"> All rights reserved</label>
+                      </div>
+                      <div class="tadio">
+                        <label><input type="radio" name="copyright"> Creative Commons</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      Creative Commons Types
+                      <br>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Attribution
+                          </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">Noncommercial
+                          </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">No Derivative Works
+                         </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="form-group">
+                      <input type="checkbox" name="" value=""> I accept the software license
+                    </div>
+                  </td>
+                </tr>
+                <tr class="form-row">
+                  <td class="col-sm-4">
+                    <div class="form-group">
+                      <label class="font-weight-bold">Rate this photo:</label>
+                      <input class="form-control" type="number" name="">
+                    </div>
+                  </td>
+                  <td class="col-sm-1"></td>
+                  <td class="col-sm-7">
+                    <div class="form-group">
+                      <label class="font-weight-bold">Color Collection</label>
+                      <input class="form-control" type="color" name="" value="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-row">
+                      <div class="form-group col-sm-5">
+                        <label class="font-weight-bold">Date Taken:</label>
+                        <input class="form-control" type="date" name="" value="">
+                      </div>
+                      <div class="col-sm-1"></div>
+                      <div class="form-group col-sm-6">
+                        <label class="font-weight-bold">Time Taken:</label>
+                        <input class="form-control" type="time" name="" value="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="btn-group">
+                      <button class="btn btn-secondary" type="button" name="">Submit</button>
+                      <button class="btn btn-secondary" type="reset" name="">Clear</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+</body>
+
+</html>
