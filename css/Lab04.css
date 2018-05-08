@@ -2,7 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 /* general text formatting */
 
-h1, h2, h3, nav, footer {
+h1,
+h2,
+h3,
+nav,
+footer {
   font-family: Lobster, Cambria, "Times New Roman", serif;
 }
 
@@ -14,7 +18,8 @@ body {
 
 /* header and navigation */
 
-header, footer {
+header,
+footer {
   color: white;
   background-color: #1A237E;
   margin: 0em 4em 0.25em 4em;
@@ -84,7 +89,11 @@ table tbody td {
   padding: 0.5em 0.75em;
 }
 
-input[type=text], input[type=date], input[type=time], input[type=number], input[type=color] {
+input[type=text],
+input[type=date],
+input[type=time],
+input[type=number],
+input[type=color] {
   height: 1.75em;
 }
 
@@ -96,7 +105,8 @@ input[name=title] {
   width: 100%;
 }
 
-input[name=city], select {
+input[name=city],
+select {
   width: 75%;
 }
 
