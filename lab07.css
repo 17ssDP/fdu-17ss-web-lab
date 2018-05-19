@@ -1,0 +1,28 @@
+body, .show_table {
+  text-align: center;
+}
+
+/* .add_table, .show_table, table {
+  text-align: center;
+} */
+
+.add, .show {
+  width: 300px;
+}
+
+table {
+  display: inline-block;
+}
+
+table th {
+  background-color: rgb(91, 93, 87);
+  color: white;
+}
+
+.odd td {
+  background-color: rgb(171, 172, 177);
+}
+
+input[type="button"] {
+  width: 300px;
+}
