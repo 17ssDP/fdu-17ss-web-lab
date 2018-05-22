@@ -49,6 +49,12 @@ function createTable() {
   addTable.appendChild(input_text);
   addTable.appendChild(input_number);
   input_number.addEventListener("change", function() {
+    if(inputs.length > 0) {
+        for (var i = addTable.childNodes.length; i > 2; i--) {
+            addTable.removeChild(addTable.lastChild);
+        }
+        inputs.length = 0;
+    }
     if (input_number.value > 0) {
       let th, th_text, input;
       inputs.length = 0;
