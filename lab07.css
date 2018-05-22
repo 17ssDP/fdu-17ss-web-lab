@@ -2,10 +2,6 @@ body, .show_table {
   text-align: center;
 }
 
-/* .add_table, .show_table, table {
-  text-align: center;
-} */
-
 .add, .show {
   width: 300px;
 }

@@ -6,15 +6,6 @@ let commit = document.getElementsByClassName("button")[0];
 let tables = [];
 let inputs = [];
 let input_text;
-document.body.addEventListener("click", function() {
-  let NotEmpty = true;
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].value == "")
-      NotEmpty = false;
-  }
-  if (NotEmpty && inputs.length != 0)
-    commit.style.display = "";
-}, false);
 selectedBox.addEventListener("change", function() {
   commit.style.display = "none";
   switch (selectedBox.selectedIndex) {
@@ -68,6 +59,15 @@ function createTable() {
         input.type = "text";
         input.placeholder = "Attr" + i;
         inputs[inputs.length] = input;
+        input.addEventListener("change", function() {
+          let NotEmpty = true;
+          for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].value == "")
+              NotEmpty = false;
+          }
+          if (NotEmpty && inputs.length != 0)
+            commit.style.display = "";
+        }, false);
         addTable.appendChild(input);
       }
     }
@@ -83,6 +83,15 @@ function addRow() {
       input.type = "text";
       input.placeholder = tables[refresh()][0].childNodes[0].childNodes[i].innerText;
       inputs[i] = input;
+      input.addEventListener("change", function() {
+        let NotEmpty = true;
+        for (var i = 0; i < inputs.length; i++) {
+          if (inputs[i].value == "")
+            NotEmpty = false;
+        }
+        if (NotEmpty && inputs.length != 0)
+          commit.style.display = "";
+      }, false);
       addTable.appendChild(input);
     }
   }
@@ -97,6 +106,15 @@ function deleteRow() {
       input.type = "text";
       input.placeholder = tables[refresh()][0].childNodes[0].childNodes[i].innerText;
       inputs[i] = input;
+      input.addEventListener("change", function() {
+        let NotEmpty = true;
+        for (var i = 0; i < inputs.length; i++) {
+          if (inputs[i].value == "")
+            NotEmpty = false;
+        }
+        if (NotEmpty && inputs.length != 0)
+          commit.style.display = "";
+      }, false);
       addTable.appendChild(input);
     }
     commit.style.display = "";
@@ -136,25 +154,6 @@ function clear(table) {
 function refresh() {
   let selectedNum = showedTable.selectedIndex;
   return selectedNum;
-}
-
-function addInputs(inputs) {
-  let table = document.createElement("table");
-  let tr = document.createElement("tr");
-  for (var i = 0; i < inputs.length; i++) {
-    th = document.createElement("th");
-    th_text = document.createTextNode(inputs[i].value);
-    th.appendChild(th_text);
-    tr.appendChild(th);
-  }
-  table.appendChild(tr);
-  tables[tables.length] = [table, input_text.value];
-  let option = document.createElement("option");
-  let option_text = document.createTextNode(input_text.value);
-  option.appendChild(option_text);
-  showedTable.appendChild(option);
-  option.selected = true;
-  showTables(table);
 }
 
 commit.addEventListener("click", function() {
