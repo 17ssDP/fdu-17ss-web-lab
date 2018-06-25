@@ -205,10 +205,6 @@ $('input[name="file_upload"]').on('change',function(){
 $('#insert').click(function(){
    if($('#audio').attr('src')){
       let currentTime = document.getElementById('audio').currentTime;
-      let hour = parseInt(currentTime / 3600)//时
-      if (hour < 10) {
-          hour = "0" + hour;
-      }
       let minute = parseInt(currentTime / 60);//分
       if (minute < 10) {
           minute = "0" + minute;
@@ -218,7 +214,7 @@ $('#insert').click(function(){
           second = "0" + second;
       }
       let value = $('#edit_lyric').val();
-      $('#edit_lyric').val(value + "[" + hour + ':' + minute + ":" + second + "]" + '\n');
+      $('#edit_lyric').val(value + "["+ minute + ":" + second + "]" + '\n');
   }else{
       alert('请先导入音乐文件');
   }
@@ -241,7 +237,7 @@ $("#replace").click(function(){
           second = "0" + second;
       }
       let value = $('#edit_lyric').val();
-      $('#edit_lyric').val(value.substring(0,get_target_pos(edit_lyric_pos)) + "[" + hour + ':' + minute + ":" + second + "]" + value.substring(get_target_pos(edit_lyric_pos) + 13,value.length));
+      $('#edit_lyric').val(value.substring(0,get_target_pos(edit_lyric_pos)) + "["+ minute + ":" + second + "]" + value.substring(get_target_pos(edit_lyric_pos) + 13,value.length));
   }else{
       alert('请先导入音乐文件');
   }
@@ -313,8 +309,10 @@ $("#selectMusic").change(function(){
             url: 'getLyric.php',
             data:{"value":value.split('.')[0]},
             success: function (data) {
-                alert(data);
-                let lyricData = data.split('\n');
+                let lyricData = data.split(',');
+                for (let i = 0; i < lyricData.length; i ++){
+                    alert(lyricData[i]);
+                }
                 let formatTime = function (time) {
                     let m = time.split(':')[0];
                     let s = time.split(':')[1];
@@ -372,7 +370,7 @@ $("#selectMusic").change(function(){
                         li[i].removeAttribute('class');
                     }
                     // wordEl.querySelectorAll('li')[count].setAttribute('class', 'sel');
-                    wordEl.querySelectorAll('li')[count].attr('class', 'sel');
+                    wordEl.querySelectorAll('li')[count].setAttribute('class', 'sel');
                     if (audio.ended) {
                         wordEl.style.marginTop = marTop + 'px';
                         count = 0;
